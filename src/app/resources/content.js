@@ -1,12 +1,12 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Hidayat Nur",
+  lastName: "Hakim",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Web development and UI/UX design",
   avatar: "/images/avatar.jpg",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
@@ -17,8 +17,8 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about design, technology, and share thoughts on the
+      intersection of creativity and engineering.
     </>
   ),
 };
@@ -29,22 +29,22 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/Hidayattt24",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/hidayat-nur-hakim/",
   },
-  {
-    name: "X",
-    icon: "x",
-    link: "",
-  },
+  // {
+  //   name: "X",
+  //   icon: "x",
+  //   link: "",
+  // },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "hidayatnurhakim2412@gmail.com",
   },
 ];
 
@@ -52,11 +52,13 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Web development and UI/UX design</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Hidayat, an informatics student at Syiah Kuala University with a
+      strong passion for crafting intuitive user experiences. I specialize in
+      web development and UI/UX design. After hours, I love building personal
+      projects and exploring the latest in design and front-end technologies.
     </>
   ),
 };
@@ -81,34 +83,39 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I am a design-driven web development enthusiast based in Banda Aceh,
+        currently pursuing my 6th semester in Informatics at Syiah Kuala
+        University. My passion lies in building modern, user-centric digital
+        experiences through clean code and thoughtful design. With a strong
+        interest in the intersection of technology and visual design, I aim to
+        transform complex ideas into intuitive and engaging interfaces. I enjoy
+        working on projects that challenge both my technical and creative
+        abilities, and I am always eager to learn and grow in the dynamic field
+        of UI/UX design and web development.
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Coding Camp powered by DBS Foundation",
+        timeframe: "Feb 2025 - Present",
+        role: "Front-End and Back-End Developer Cohort Mahasiswa",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Currently participating in intensive full-stack development training
+            focused on modern web technologies.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Building real-world applications while mastering tools like GitHub,
+            HTML/CSS, JavaScript, and web frameworks.
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/projects/project-01/dbscodingcamp.png",
             alt: "Once UI Project",
             width: 16,
             height: 9,
@@ -116,34 +123,75 @@ const about = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Himpunan Mahasiswa Informatika Universitas Syiah Kuala",
+        timeframe: "Feb 2025 - Present",
+        role: "Head of Student Welfare Management Department",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Leading and managing a team of 14 active staff members across two
+            key divisions: Student Aspirations and Women Empowerment.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Spearheaded impactful programs while fostering a collaborative and
+            growth-oriented work culture.
+          </>,
+          <>
+            Ensured smooth execution of departmental initiatives and encouraged
+            staff development through meaningful experiences.
           </>,
         ],
-        images: [],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/project-01/hmif25.jpg",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        company: "Himpunan Mahasiswa Informatika Universitas Syiah Kuala",
+        timeframe: "Feb 2024 - Feb 2025",
+        role: "Staff of Student Welfare Management Department",
+        achievements: [
+          <>
+            Supported and participated in the implementation of various student
+            welfare programs.
+          </>,
+          <>
+            Helped maintain a conducive and harmonious work environment within
+            the department.
+          </>,
+          <>
+            Collaborated closely with peers to enhance the student experience
+            through meaningful initiatives.
+          </>,
+        ],
+        images: [
+          {
+            src: "/images/projects/project-01/hmif24.jpg",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
     ],
   },
+
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Syiah Kuala University",
+        description: (
+          <>
+            Currently pursuing a Bachelor's degree in Informatics (6th
+            semester).
+          </>
+        ),
       },
     ],
   },
@@ -153,7 +201,12 @@ const about = {
     skills: [
       {
         title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        description: (
+          <>
+            Designing user-friendly interfaces and experiences using tools like
+            Figma
+          </>
+        ),
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -163,7 +216,7 @@ const about = {
             height: 9,
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
+            src: "/images/projects/project-01/cover-03.png",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -171,17 +224,29 @@ const about = {
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "React JS",
+        description: <>Building website with this framework</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
             src: "/images/projects/project-01/cover-04.jpg",
             alt: "Project image",
             width: 16,
-            height: 9,
+            height: 10,
           },
         ],
+      },
+      {
+        title: "Jupyter Notebook",
+        description: <>Data analysis , visualization Machine Learning</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      {
+        title: "Python",
+        description: <>Data Science & Machine Learning</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
       },
     ],
   },
